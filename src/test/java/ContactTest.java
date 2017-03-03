@@ -2,10 +2,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import util.BookList;
 import util.Contact;
-import util.ContactBook;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Anton on 03.03.2017.
@@ -25,13 +21,14 @@ public class ContactTest extends Assert {
 
 
         bookList.save("result.txt", bookList.getContactList());
+        bookList.saveToJson("result.json", bookList.getContactList());
     }
 
-    @Test
+    /*@Test
     public void testRead() throws Exception{
         BookList bookList = new BookList();
         bookList.load("result.txt");
         System.out.println(bookList.getContactList().get(1).getName());
         //List<Contact> contactList
-    }
+    }*/
 }

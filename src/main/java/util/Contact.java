@@ -1,16 +1,11 @@
 package util;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Contact {
+public class Contact implements Serializable {
     private String name; // Фамилия Имя Отчество
     private List<String> phones; // Список телефонов
 
